@@ -38,6 +38,7 @@ struct CharactersView: View {
             Task {
               await  model.fetchCharacters()
             }
+            model.fetchTestRequest()
         }
     }
         
