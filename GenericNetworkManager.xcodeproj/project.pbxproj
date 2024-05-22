@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4FA5E52BFE980200E07458 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FA5E42BFE980200E07458 /* CharactersView.swift */; };
 		EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */; };
-		EEC039F22BFE66BF00D7D30E /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC039F12BFE66BF00D7D30E /* CharactersView.swift */; };
 		EEC039F42BFE66C000D7D30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F32BFE66C000D7D30E /* Assets.xcassets */; };
 		EEC039F72BFE66C000D7D30E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F62BFE66C000D7D30E /* Preview Assets.xcassets */; };
 		EEC03A012BFE678000D7D30E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A002BFE678000D7D30E /* APIManager.swift */; };
@@ -21,9 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE4FA5E42BFE980200E07458 /* CharactersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharactersView.swift; path = GenericNetworkManager/Scene/CharactersView.swift; sourceTree = SOURCE_ROOT; };
 		EEC039EC2BFE66BF00D7D30E /* GenericNetworkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericNetworkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkManagerApp.swift; sourceTree = "<group>"; };
-		EEC039F12BFE66BF00D7D30E /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		EEC039F32BFE66C000D7D30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC039F62BFE66C000D7D30E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEC03A002BFE678000D7D30E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC03A112BFE8BD400D7D30E /* CharacterService */,
-				EEC039F12BFE66BF00D7D30E /* CharactersView.swift */,
+				EE4FA5E42BFE980200E07458 /* CharactersView.swift */,
 				EEC03A0E2BFE765500D7D30E /* CharactersViewModel.swift */,
 			);
 			path = Scene;
@@ -185,9 +185,9 @@
 				EEC03A0F2BFE765500D7D30E /* CharactersViewModel.swift in Sources */,
 				EEC03A0D2BFE6C4100D7D30E /* CharactersNetworkServices.swift in Sources */,
 				EEC03A012BFE678000D7D30E /* APIManager.swift in Sources */,
-				EEC039F22BFE66BF00D7D30E /* CharactersView.swift in Sources */,
 				EEC03A032BFE67B900D7D30E /* NetworkHandler.swift in Sources */,
 				EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */,
+				EE4FA5E52BFE980200E07458 /* CharactersView.swift in Sources */,
 				EEC03A082BFE6ACF00D7D30E /* CharactersEndPoint.swift in Sources */,
 				EEC03A052BFE67D200D7D30E /* ResponseHandler.swift in Sources */,
 				EEC03A0B2BFE6AFC00D7D30E /* AllCharactersModel.swift in Sources */,
