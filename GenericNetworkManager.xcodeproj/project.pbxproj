@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57B4A4E22BFEAAE700A0CEC0 /* DataProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 57B4A4E12BFEAAE700A0CEC0 /* DataProvider */; };
 		EE4FA5E52BFE980200E07458 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FA5E42BFE980200E07458 /* CharactersView.swift */; };
 		EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */; };
 		EEC039F42BFE66C000D7D30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F32BFE66C000D7D30E /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57B4A4DF2BFEAAD900A0CEC0 /* DataProvider */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DataProvider; sourceTree = "<group>"; };
 		EE4FA5E42BFE980200E07458 /* CharactersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharactersView.swift; path = GenericNetworkManager/Scene/CharactersView.swift; sourceTree = SOURCE_ROOT; };
 		EEC039EC2BFE66BF00D7D30E /* GenericNetworkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericNetworkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkManagerApp.swift; sourceTree = "<group>"; };
@@ -40,17 +42,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B4A4E22BFEAAE700A0CEC0 /* DataProvider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57B4A4DE2BFEAABE00A0CEC0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				57B4A4DF2BFEAAD900A0CEC0 /* DataProvider */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		57B4A4E02BFEAAE700A0CEC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEC039E32BFE66BF00D7D30E = {
 			isa = PBXGroup;
 			children = (
 				EEC039EE2BFE66BF00D7D30E /* GenericNetworkManager */,
 				EEC039ED2BFE66BF00D7D30E /* Products */,
+				57B4A4E02BFEAAE700A0CEC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,7 @@
 		EEC039EE2BFE66BF00D7D30E /* GenericNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				57B4A4DE2BFEAABE00A0CEC0 /* Packages */,
 				EEC039FD2BFE66D700D7D30E /* Network */,
 				EEC03A062BFE68BD00D7D30E /* Scene */,
 				EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */,
@@ -128,6 +148,9 @@
 			dependencies = (
 			);
 			name = GenericNetworkManager;
+			packageProductDependencies = (
+				57B4A4E12BFEAAE700A0CEC0 /* DataProvider */,
+			);
 			productName = GenericNetworkManager;
 			productReference = EEC039EC2BFE66BF00D7D30E /* GenericNetworkManager.app */;
 			productType = "com.apple.product-type.application";
@@ -396,6 +419,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57B4A4E12BFEAAE700A0CEC0 /* DataProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataProvider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEC039E42BFE66BF00D7D30E /* Project object */;
 }

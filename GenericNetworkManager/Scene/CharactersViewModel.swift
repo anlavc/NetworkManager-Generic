@@ -6,12 +6,13 @@
 //
 
 import Foundation
-
+import DataProvider
 
 @Observable
 final class CharactersViewModel {
     
     private let characterNetworkServices: CharacterNetworkServicesProtocol
+    private let dataProvider =  XApiDataProvider.shared.apiDataProvider
     
     init(characterNetworkServices: CharactersNetworkServices = CharactersNetworkServices(networkService: APIManager())) {
         self.characterNetworkServices = characterNetworkServices
@@ -31,6 +32,19 @@ final class CharactersViewModel {
                 print(networkError.localizedDescription)
             } else {
                 print("Unknown Error: \(error)")
+            }
+        }
+    }
+    
+    func fetchTestRequest() {
+        let request = TestRequests()
+        dataProvider.request(for: request) { [weak self] result in
+            guard let self else { return }
+            switch result {
+            case .success(let response):
+                print("dsadsa", response)
+            case .failure(let error):
+                print("dsadsa", error)
             }
         }
     }
