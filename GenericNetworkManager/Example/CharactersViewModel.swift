@@ -22,9 +22,9 @@ final class CharactersViewModel {
             guard let self else { return }
             switch result {
             case .success(let response):
-                print("dsadsa", response)
+                print("--Response--", response)
             case .failure(let error):
-                print("dsadsa", error)
+                print("--Error--", error)
             }
         }
     }
