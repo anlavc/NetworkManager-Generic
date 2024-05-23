@@ -1,51 +1,46 @@
+////
+////  CharactersEndPoint.swift
+////  GenericNetworkManager
+////
+////  Created by Anıl AVCI on 22.05.2024.
+////
 //
-//  CharactersEndPoint.swift
-//  GenericNetworkManager
-//
-//  Created by Anıl AVCI on 22.05.2024.
-//
-
 import Foundation
+import DataProvider
 
-enum AllCharacterEndPoint {
-    case characters
+protocol XCharacters: DecodableResponseRequest {}
+
+// MARK: - RequestEncoding
+extension XCharacters {
+    var encoding: RequestEncoding {
+        switch method {
+        case .get, .put:
+            return .url
+        case .post:
+            return .json
+        default:
+            return .json
+        }
+    }
 }
 
-extension AllCharacterEndPoint: APIEndPointType {
-    
-    var path: String {
-        switch self {
-        case .characters:
-            return "/character"
-        }
+// MARK: - URL
+extension XCharacters {
+    var url: String {
+        return "https://rickandmortyapi.com/api" + path
     }
-    
-    var baseURL: String {
-        switch self {
-        case .characters:
-            return "https://rickandmortyapi.com/api"
-        }
+}
+
+// MARK: - RequestParameters
+extension XCharacters {
+    var parameters: RequestParameters {
+        return [:]
     }
-    
-    var url: URL? {
-        return URL(string: "\(baseURL)\(path)")
-    }
-    
-    var method: HTTPMethod {
-        switch self {
-        case .characters:
-            return .GET
-        }
-    }
-    
-    var body: Encodable? {
-        switch self {
-        case .characters:
-            return nil
-        }
-    }
-    
-    var headers: [String : String]? {
-        return nil
+}
+
+// MARK: - RequestHeaders
+extension XCharacters {
+    var headers: RequestHeaders {
+        return [:]
     }
 }

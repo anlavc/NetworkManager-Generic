@@ -12,7 +12,7 @@ struct CharactersView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.horizontal) {
-                LazyHStack {
+                HStack {
                     ForEach(model.allCharacters, id: \.self) { character in
                         VStack(alignment :.leading,spacing: 5) {
                             Text(character.title)
@@ -35,10 +35,7 @@ struct CharactersView: View {
             .navigationTitle("Rick & Morthy")
         }
         .onAppear {
-            Task {
-              await  model.fetchCharacters()
-            }
-            model.fetchTestRequest()
+            model.fetchCharactersRequest()
         }
     }
         

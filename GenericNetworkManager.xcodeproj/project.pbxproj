@@ -12,12 +12,8 @@
 		EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */; };
 		EEC039F42BFE66C000D7D30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F32BFE66C000D7D30E /* Assets.xcassets */; };
 		EEC039F72BFE66C000D7D30E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F62BFE66C000D7D30E /* Preview Assets.xcassets */; };
-		EEC03A012BFE678000D7D30E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A002BFE678000D7D30E /* APIManager.swift */; };
-		EEC03A032BFE67B900D7D30E /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A022BFE67B900D7D30E /* NetworkHandler.swift */; };
-		EEC03A052BFE67D200D7D30E /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A042BFE67D200D7D30E /* ResponseHandler.swift */; };
 		EEC03A082BFE6ACF00D7D30E /* CharactersEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A072BFE6ACF00D7D30E /* CharactersEndPoint.swift */; };
 		EEC03A0B2BFE6AFC00D7D30E /* AllCharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A0A2BFE6AFC00D7D30E /* AllCharactersModel.swift */; };
-		EEC03A0D2BFE6C4100D7D30E /* CharactersNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A0C2BFE6C4100D7D30E /* CharactersNetworkServices.swift */; };
 		EEC03A0F2BFE765500D7D30E /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC03A0E2BFE765500D7D30E /* CharactersViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,12 +24,8 @@
 		EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkManagerApp.swift; sourceTree = "<group>"; };
 		EEC039F32BFE66C000D7D30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC039F62BFE66C000D7D30E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EEC03A002BFE678000D7D30E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		EEC03A022BFE67B900D7D30E /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
-		EEC03A042BFE67D200D7D30E /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		EEC03A072BFE6ACF00D7D30E /* CharactersEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersEndPoint.swift; sourceTree = "<group>"; };
 		EEC03A0A2BFE6AFC00D7D30E /* AllCharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersModel.swift; sourceTree = "<group>"; };
-		EEC03A0C2BFE6C4100D7D30E /* CharactersNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersNetworkServices.swift; sourceTree = "<group>"; };
 		EEC03A0E2BFE765500D7D30E /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,9 +97,6 @@
 		EEC039FD2BFE66D700D7D30E /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EEC03A002BFE678000D7D30E /* APIManager.swift */,
-				EEC03A022BFE67B900D7D30E /* NetworkHandler.swift */,
-				EEC03A042BFE67D200D7D30E /* ResponseHandler.swift */,
 				EEC03A072BFE6ACF00D7D30E /* CharactersEndPoint.swift */,
 			);
 			path = Network;
@@ -127,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				EEC03A0A2BFE6AFC00D7D30E /* AllCharactersModel.swift */,
-				EEC03A0C2BFE6C4100D7D30E /* CharactersNetworkServices.swift */,
 			);
 			path = CharacterService;
 			sourceTree = "<group>";
@@ -206,13 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC03A0F2BFE765500D7D30E /* CharactersViewModel.swift in Sources */,
-				EEC03A0D2BFE6C4100D7D30E /* CharactersNetworkServices.swift in Sources */,
-				EEC03A012BFE678000D7D30E /* APIManager.swift in Sources */,
-				EEC03A032BFE67B900D7D30E /* NetworkHandler.swift in Sources */,
 				EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */,
 				EE4FA5E52BFE980200E07458 /* CharactersView.swift in Sources */,
 				EEC03A082BFE6ACF00D7D30E /* CharactersEndPoint.swift in Sources */,
-				EEC03A052BFE67D200D7D30E /* ResponseHandler.swift in Sources */,
 				EEC03A0B2BFE6AFC00D7D30E /* AllCharactersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

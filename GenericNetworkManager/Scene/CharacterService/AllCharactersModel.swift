@@ -40,3 +40,8 @@ struct Location: Codable {
     let name: String
     let url: String
 }
+
+struct AllCharactersCellModel: Hashable,Decodable {
+    let title: String
+    let imageURL: String
+}
