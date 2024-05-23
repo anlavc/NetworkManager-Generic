@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		57B4A4DF2BFEAAD900A0CEC0 /* DataProvider */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DataProvider; sourceTree = "<group>"; };
-		EE4FA5E42BFE980200E07458 /* CharactersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharactersView.swift; path = GenericNetworkManager/Scene/CharactersView.swift; sourceTree = SOURCE_ROOT; };
+		EE4FA5E42BFE980200E07458 /* CharactersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharactersView.swift; path = GenericNetworkManager/Example/CharactersView.swift; sourceTree = SOURCE_ROOT; };
 		EEC039EC2BFE66BF00D7D30E /* GenericNetworkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericNetworkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkManagerApp.swift; sourceTree = "<group>"; };
 		EEC039F32BFE66C000D7D30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +56,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EEB3D8332BFF37C8003DA7C6 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				EEC03A0A2BFE6AFC00D7D30E /* AllCharactersModel.swift */,
+				EEC03A072BFE6ACF00D7D30E /* CharactersEndPoint.swift */,
+				EEC03A0E2BFE765500D7D30E /* CharactersViewModel.swift */,
+				EE4FA5E42BFE980200E07458 /* CharactersView.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		EEC039E32BFE66BF00D7D30E = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				57B4A4DE2BFEAABE00A0CEC0 /* Packages */,
-				EEC039FD2BFE66D700D7D30E /* Network */,
-				EEC03A062BFE68BD00D7D30E /* Scene */,
+				EEB3D8332BFF37C8003DA7C6 /* Example */,
 				EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */,
 				EEC039F32BFE66C000D7D30E /* Assets.xcassets */,
 				EEC039F52BFE66C000D7D30E /* Preview Content */,
@@ -92,32 +102,6 @@
 				EEC039F62BFE66C000D7D30E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		EEC039FD2BFE66D700D7D30E /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				EEC03A072BFE6ACF00D7D30E /* CharactersEndPoint.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		EEC03A062BFE68BD00D7D30E /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				EEC03A112BFE8BD400D7D30E /* CharacterService */,
-				EE4FA5E42BFE980200E07458 /* CharactersView.swift */,
-				EEC03A0E2BFE765500D7D30E /* CharactersViewModel.swift */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
-		EEC03A112BFE8BD400D7D30E /* CharacterService */ = {
-			isa = PBXGroup;
-			children = (
-				EEC03A0A2BFE6AFC00D7D30E /* AllCharactersModel.swift */,
-			);
-			path = CharacterService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
