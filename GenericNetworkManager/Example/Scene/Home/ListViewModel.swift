@@ -5,38 +5,28 @@
 //  Created by Anıl AVCI on 22.05.2024.
 //
 
-import Foundation
+import SwiftUI
 import DataProvider
 
-@Observable
-final class CharactersViewModel {
-    
+final class ListViewModel: ObservableObject {
     private let dataProvider =  XApiDataProvider.shared.apiDataProvider
     
-    var allCharacters: [AllCharactersCellModel] = []
     
-    //Test Request
-    func fetchTestRequest() {
-        let request = TestRequests()
-        dataProvider.request(for: request) { [weak self] result in
-            guard let self else { return }
-            switch result {
-            case .success(let response):
-                print("--Response--", response)
-            case .failure(let error):
-                print("--Error--", error)
-            }
-        }
+    @Binding var navPath: [Routers]
+    @Published var allCharacters: [AllCharactersCellModel] = []
+    
+    init(navPath: Binding<[Routers]>) {
+        self._navPath = navPath
     }
     
     func fetchCharactersRequest() {
-        let request = CharactersRequest()
+        let request = CharactersListRequest()
         dataProvider.request(for: request) { [weak self] result in
             guard let self else { return }
             switch result {
             case .success(let response):
                 allCharacters = response.results.compactMap({
-                    AllCharactersCellModel(title: $0.name, imageURL: $0.image)
+                    AllCharactersCellModel(id: $0.id, title: $0.name, imageURL: $0.image)
                 })
                 print("------Response-------", response)
             case .failure(let error):
@@ -44,9 +34,13 @@ final class CharactersViewModel {
             }
         }
     }
+    
+    func characterAppend(id: Int) {
+        navPath.append(.character(id: id))
+    }
 }
 
-struct CharactersRequest:XCharacters {
+struct CharactersListRequest:XCharacters {
     typealias ResponseType = Rick
     var path: String = "/character"
     var method: DataProvider.RequestMethod = .get

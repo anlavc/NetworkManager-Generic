@@ -11,7 +11,7 @@ import SwiftUI
 struct GenericNetworkManagerApp: App {
     var body: some Scene {
         WindowGroup {
-            CharactersView()
+            NavigationStackManager()
         }
     }
 }

@@ -7,33 +7,45 @@
 
 import SwiftUI
 
-struct CharactersView: View {
-    @State var model: CharactersViewModel = CharactersViewModel()
+struct ListHomeView: View {
+    @ObservedObject var model: ListViewModel
+  
     var body: some View {
-        NavigationStack {
+        
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(model.allCharacters, id: \.self) { character in
                         VStack(alignment :.leading,spacing: 5) {
-                            Text(character.title)
+                            Button(action: {
+                                model.characterAppend(id: character.id)
+                            }) {
+                                HStack {
+                                    Text(character.title)
+                                    Image(systemName: "arrow.right.square")
+                                }
+                                .padding(.trailing)
                                 .font(.title)
                                 .fontWeight(.semibold)
+                                .foregroundStyle(.gray)
+                            }
+                      
                             AsyncImage(url: URL(string: character.imageURL)) { image in
                                 image
                             } placeholder: {
                                 ProgressView()
                             }
                         }
-                        Spacer()
+                        .frame(maxWidth: 300)
+                        
                     }
                 }
             }
             .scrollTargetBehavior(.viewAligned)
             .scrollTargetLayout()
-            .contentMargins(20, for: .scrollContent)
-            .containerRelativeFrame(.horizontal, count: 1, span: 1, spacing: 10)
+            .contentMargins(20, for: .automatic)
+            .containerRelativeFrame(.horizontal, count: 1, span: 1, spacing: 30)
             .navigationTitle("Rick & Morthy")
-        }
+        
         .onAppear {
             model.fetchCharactersRequest()
         }
@@ -42,5 +54,5 @@ struct CharactersView: View {
 }
 
 #Preview {
-    CharactersView()
+    ListHomeView(model: ListViewModel(navPath: .constant([])))
 }

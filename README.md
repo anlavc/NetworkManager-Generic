@@ -59,7 +59,11 @@ The network manager can then be called with something like the following
 ```
 
 ```swift
+## Getting Started
 
+To run the iOSNetworkExample project, follow these steps:
+
+## Examples
 public struct TestRequests: XApiClient {
     public typealias ResponseType = TodoResponse
 
