@@ -1,10 +1,11 @@
 # Generic Network Manager
  
 With Network Manager, you can now easily manage your internet requests, send and receive data.
+How to manage page navigation with SwfitUI via a rooter. One of the best examples.
 
 
 ## Installation
-This library supports Swift Package Manager ([installation](https://github.com/anlavc/NetworkManager-Generic.git)).
+After downloading to install the project, you can use it by importing it
 
 ## Functionality
 ```swift
@@ -57,16 +58,13 @@ The network manager can then be called with something like the following
     }
 }
 ```
-
-```swift
 ## Getting Started
 
 To run the iOSNetworkExample project, follow these steps:
 
-## Examples
+```swift
 public struct TestRequests: XApiClient {
     public typealias ResponseType = TodoResponse
-
     public var path: String = "todos/1"
     public var method: RequestMethod = .get
     public var parameters: RequestParameters = [:]
@@ -75,6 +73,7 @@ public struct TestRequests: XApiClient {
     }
 }
 ```
+
 ```swift
 public struct TodoResponse: Decodable {
     public let userId: Int?
@@ -83,6 +82,7 @@ public struct TodoResponse: Decodable {
     public let completed: Bool?
 }
 ```
+
 ```swift
 public protocol XApiClient: DecodableResponseRequest {}
 
@@ -121,3 +121,4 @@ public extension XApiClient {
     }
 }
 ```
+![Simulator Screen Recording - 14pro - 2024-06-01 at 20 40 20](https://github.com/anlavc/NetworkManager-Generic/assets/50744756/e1ace0af-f985-499e-b68b-349ca550c766)
