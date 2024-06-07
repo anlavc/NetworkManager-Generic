@@ -45,7 +45,7 @@ final class LocationViewModel: ObservableObject {
     }
 }
         
-struct LocationRequest: XLocation {
+struct LocationRequest: XCharacters {
     typealias ResponseType = LocationModel
     var path: String = ""
     var url: String

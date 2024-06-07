@@ -12,8 +12,6 @@
 		EE0C07752C0A695000F01BDA /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C07742C0A695000F01BDA /* LocationViewModel.swift */; };
 		EE0C07772C0A699500F01BDA /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C07762C0A699500F01BDA /* LocationModel.swift */; };
 		EE0C07792C0A69A400F01BDA /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C07782C0A69A400F01BDA /* CharacterModel.swift */; };
-		EE0C077B2C0A6AD500F01BDA /* CharacterEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C077A2C0A6AD500F01BDA /* CharacterEndPoint.swift */; };
-		EE0C077D2C0A6AE300F01BDA /* LocationEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C077C2C0A6AE300F01BDA /* LocationEndPoint.swift */; };
 		EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */; };
 		EEC039F42BFE66C000D7D30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F32BFE66C000D7D30E /* Assets.xcassets */; };
 		EEC039F72BFE66C000D7D30E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC039F62BFE66C000D7D30E /* Preview Assets.xcassets */; };
@@ -32,8 +30,6 @@
 		EE0C07742C0A695000F01BDA /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		EE0C07762C0A699500F01BDA /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		EE0C07782C0A69A400F01BDA /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
-		EE0C077A2C0A6AD500F01BDA /* CharacterEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEndPoint.swift; sourceTree = "<group>"; };
-		EE0C077C2C0A6AE300F01BDA /* LocationEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndPoint.swift; sourceTree = "<group>"; };
 		EEC039EC2BFE66BF00D7D30E /* GenericNetworkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericNetworkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC039EF2BFE66BF00D7D30E /* GenericNetworkManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkManagerApp.swift; sourceTree = "<group>"; };
 		EEC039F32BFE66C000D7D30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,8 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				EEC03A072BFE6ACF00D7D30E /* ListCharactersEndPoint.swift */,
-				EE0C077A2C0A6AD500F01BDA /* CharacterEndPoint.swift */,
-				EE0C077C2C0A6AE300F01BDA /* LocationEndPoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -253,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC03A0F2BFE765500D7D30E /* ListViewModel.swift in Sources */,
-				EE0C077D2C0A6AE300F01BDA /* LocationEndPoint.swift in Sources */,
 				EEC039F02BFE66BF00D7D30E /* GenericNetworkManagerApp.swift in Sources */,
 				EEC615942C09071900ABB93E /* ListHomeView.swift in Sources */,
 				EE0C07752C0A695000F01BDA /* LocationViewModel.swift in Sources */,
@@ -265,7 +258,6 @@
 				EE0C07792C0A69A400F01BDA /* CharacterModel.swift in Sources */,
 				EE0C07732C0A694600F01BDA /* LocationView.swift in Sources */,
 				EEC03A0B2BFE6AFC00D7D30E /* AllCharactersModel.swift in Sources */,
-				EE0C077B2C0A6AD500F01BDA /* CharacterEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

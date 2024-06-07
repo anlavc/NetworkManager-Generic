@@ -23,7 +23,7 @@ final class CharacterViewModel: ObservableObject {
     }
     
     func fetchCharactersRequest(id: Int) {
-        let request = CharactersRequest(path: "\(id)")
+        let request = CharactersRequest(path: "/character/\(id)")
         dataProvider.request(for: request) { [weak self] result in
             guard let self else { return }
             switch result {
@@ -44,7 +44,7 @@ final class CharacterViewModel: ObservableObject {
     }
 }
 
-struct CharactersRequest:XCharacterSingle {
+struct CharactersRequest:XCharacters {
     typealias ResponseType = AllResult
     var path: String
     var method: DataProvider.RequestMethod = .get
